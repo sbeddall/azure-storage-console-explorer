@@ -7,7 +7,7 @@ DESCRIPTION = (
     "A console application that interacts with azure blob storage."
 )
 
-with open(os.path.join("asce", "_version.py"), "r") as fd:
+with open(os.path.join("asce", "engine", "_version.py"), "r") as fd:
     version = re.search(
         r'^VERSION\s*=\s*[\'"]([^\'"]*)[\'"]', fd.read(), re.MULTILINE
     ).group(1)
