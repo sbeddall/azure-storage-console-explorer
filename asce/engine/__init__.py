@@ -7,9 +7,9 @@ from ._version import VERSION
 __version__ = VERSION
 
 __all__ = [
-  "ControlState",
-  "StateMachine",
-  "InteractionNode",
-  "OutputNode",
-  "INPUT_FIELD_NAME"
+    "ControlState",
+    "StateMachine",
+    "InteractionNode",
+    "OutputNode",
+    "INPUT_FIELD_NAME",
 ]

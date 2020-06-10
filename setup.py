@@ -3,9 +3,7 @@ import os, re
 
 PACKAGE_NAME = "azure-storage-console-explorer"
 
-DESCRIPTION = (
-    "A console application that interacts with azure blob storage."
-)
+DESCRIPTION = "A console application that interacts with azure blob storage."
 
 with open(os.path.join("asce", "engine", "_version.py"), "r") as fd:
     version = re.search(
@@ -30,11 +28,7 @@ setup(
     author_email="sbeddall@gmail.com",
     license="MIT License",
     packages=find_packages(),
-    install_requires=[
-      "azure-storage-blob==12.3.1"
-    ],
+    install_requires=["azure-storage-blob==12.3.1"],
     python_requires=">=3.5.0",
-    entry_points = {
-        'console_scripts': 'asce=asce.engine.main:run'
-    }
+    entry_points={"console_scripts": "asce=asce.engine.main:run"},
 )
