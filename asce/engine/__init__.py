@@ -1,15 +1,18 @@
 from .state_machine import StateMachine
 from .control_state import ControlState
-from .state_implementations import InteractionNode, OutputNode, INPUT_FIELD_NAME
+from .state_payload import StatePayload
+from .state_implementations import InteractionNodes, INPUT_FIELD_NAME
+
 
 from ._version import VERSION
 
 __version__ = VERSION
 
 __all__ = [
-    "ControlState",
     "StateMachine",
+    "ControlState",
+    "StatePayload",
+    "InteractionNodes"
     "InteractionNode",
-    "OutputNode",
     "INPUT_FIELD_NAME",
 ]
