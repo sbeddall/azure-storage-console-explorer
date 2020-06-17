@@ -16,7 +16,6 @@ if not version:
 with open("README.md", encoding="utf-8") as f:
     long_description = f.read()
 
-
 setup(
     name=PACKAGE_NAME,
     description=DESCRIPTION,
@@ -31,4 +30,5 @@ setup(
     install_requires=["azure-storage-blob==12.3.1"],
     python_requires=">=3.5.0",
     entry_points={"console_scripts": "asce=asce.engine.main:run"},
+    include_package_data=True
 )

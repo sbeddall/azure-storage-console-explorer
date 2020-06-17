@@ -1,8 +1,8 @@
 import importlib
 from .control_state import ControlState
 
-INPUT_FIELD_NAME = "input_data"
-
+# get all the common settings
+from .env import *
 
 class InteractionNode(ControlState):
     def execute(self, default_input=None):
