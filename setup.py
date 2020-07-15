@@ -30,5 +30,5 @@ setup(
     install_requires=["azure-storage-blob==12.3.1"],
     python_requires=">=3.5.0",
     entry_points={"console_scripts": "asce=asce.engine.main:run"},
-    include_package_data=True
+    include_package_data=True,
 )

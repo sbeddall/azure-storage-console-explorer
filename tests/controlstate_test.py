@@ -1,22 +1,13 @@
-import pytest
-from asce.engine import *
+# flake8: noqa
 
-
-def test_cant_instantiate():
-    try:
-        cs = ControlState()
-    except TypeError as f:
-        # if we got here we are happy
-        assert True == True
-    except Exception as e:
-        assert False
-
+from asce.engine import * #noqa: F403
 
 def test_basic_interact():
-    orig = InteractionNode(None, None, None)
-    next_state = orig.execute(
+    orig = InteractionNodes.InteractionNode(None, None, None)
+
+    exit_payload = orig.execute(
         "test input data that should appear in property_bag of next state"
     )
 
-    assert next_state != None
-    assert INPUT_FIELD_NAME in next_state.property_bag
+    assert exit_payload != None
+    assert INPUT_FIELD_NAME in exit_payload
