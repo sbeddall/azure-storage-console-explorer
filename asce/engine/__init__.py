@@ -12,7 +12,6 @@ __all__ = [
     "StateMachine",
     "ControlState",
     "StatePayload",
-    "InteractionNodes"
-    "InteractionNode",
+    "InteractionNodes",
     "INPUT_FIELD_NAME",
 ]
